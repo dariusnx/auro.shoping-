@@ -353,9 +353,8 @@
         <div>
           <label style="font-weight:700">Credits</label>
           <div style="margin-top:8px;padding:12px;border-radius:10px;background:var(--glass)">
-            <div><strong>Made by:</strong> Darius — code & design</div>
-            <div><strong>Distribution & Shipping:</strong> Iosua</div>
-            <div style="font-size:12px;color:var(--muted);margin-top:8px">You can edit these credits in settings to show your team.</div>
+            <div><strong>Made by:</strong> Darius Ghigeanu — website developer, designer and scripter</div>
+            <div style="margin-top:8px"><strong>Shipping & Distribution:</strong> Iosua Paunescu</div>
           </div>
         </div>
 
@@ -377,54 +376,74 @@
 <script>
 /* ---------- Data ---------- */
 const products = [
-  { id:1, brand:"Polo Ralph Lauren", name_ro:"Tricou din bumbac premium - Negru", name_en:"Cotton Jersey Long Sleeve T-Shirt - Black", name_de:"Premium Baumwoll-Langarmshirt - Schwarz",
-    price:10, desc_ro:"Tricou din bumbac premium, mânecă lungă.", desc_en:"Premium cotton long sleeve tee.", desc_de:"Premium Baumwoll-Langarmshirt.",
-    img:"https://si.geilicdn.com/pcitem1910570286-07740000019624bf5cd40a2395a3_1920_1920.jpg",
-    category:"shirts", originalPrice:10, discount:0.1, isNew:true, sizes:["XS", "S", "M", "L", "XL"],
+  { id:1, brand:"Ralph Lauren", name_ro:"Ralph Lauren T-Shirt", name_en:"Ralph Lauren T-Shirt", name_de:"Ralph Lauren T-Shirt",
+    price:24.99, desc_ro:"Tricou din bumbac premium, mânecă lungă.", desc_en:"Premium cotton long sleeve tee.", desc_de:"Premium Baumwoll-Langarmshirt.",
+    img:"https://si.geilicdn.com/pcitem1910570286-0a890000019624bf5a660a2396f4_1920_1920.jpg",
+    category:"shirts", originalPrice:29.99, discount:0.1667, isNew:true, sizes:["XS", "S", "M", "L", "XL"],
     images: [
+      "https://si.geilicdn.com/pcitem1910570286-0a890000019624bf5a660a2396f4_1920_1920.jpg",
       "https://si.geilicdn.com/pcitem1910570286-07740000019624bf5cd40a2395a3_1920_1920.jpg",
       "https://si.geilicdn.com/pcitem1910570286-0aea0000019624bf550b0a20e7c7_1920_1920.jpg",
-      "https://si.geilicdn.com/pcitem1910570286-10e20000019624bf48780a2301b4_1920_1920.jpg",
-      "https://si.geilicdn.com/pcitem1910570286-0a890000019624bf5a660a2396f4_1920_1920.jpg"
+      "https://si.geilicdn.com/pcitem1910570286-10e20000019624bf48780a2301b4_1920_1920.jpg"
     ] },
-  { id:2, brand:"Polo Ralph Lauren", name_ro:"Tricou din bumbac premium - Albastru", name_en:"Cotton Jersey Long Sleeve T-Shirt - Blue", name_de:"Premium Baumwoll-Langarmshirt - Blau",
-    price:10, desc_ro:"Tricou din bumbac premium, mânecă lungă.", desc_en:"Premium cotton long sleeve tee.", desc_de:"Premium Baumwoll-Langarmshirt.",
+  { id:2, brand:"Ralph Lauren", name_ro:"Ralph Lauren Hoodie", name_en:"Ralph Lauren Hoodie", name_de:"Ralph Lauren Hoodie",
+    price:26.99, desc_ro:"Hoodie premium din bumbac.", desc_en:"Premium cotton hoodie.", desc_de:"Premium Baumwoll-Hoodie.",
     img:"https://si.geilicdn.com/pcitem1910570286-0b5f0000019624c3a4890a21146b_1281_1280.jpg",
-    category:"shirts", originalPrice:10, discount:0, isNew:true, sizes:["XS", "S", "M", "L", "XL"],
+    category:"shirts", originalPrice:26.99, discount:0, isNew:true, sizes:["XS", "S", "M", "L", "XL"],
     images: [
       "https://si.geilicdn.com/pcitem1910570286-0b5f0000019624c3a4890a21146b_1281_1280.jpg",
       "https://si.geilicdn.com/pcitem1910570286-076b0000019624c39f940a239646_1280_1280.jpg",
       "https://si.geilicdn.com/pcitem1910570286-13050000019624c3b10c0a2303ee_1280_1280.jpg",
       "https://si.geilicdn.com/pcitem1910570286-0b380000019624c3aa390a231316_1280_1280.jpg"
     ] },
-  { id:3, brand:"Polo Ralph Lauren", name_ro:"Tricou cu mânecă scurtă - Roșu", name_en:"Short Sleeve Polo Shirt - Red", name_de:"Kurzarm-Polohemd - Rot",
-    price:10, desc_ro:"Tricou clasic cu mânecă scurtă, perfect pentru orice ocazie.", desc_en:"Classic short sleeve polo shirt, perfect for any occasion.", desc_de:"Klassisches Kurzarm-Polohemd, perfekt für jeden Anlass.",
+  { id:3, brand:"Ralph Lauren", name_ro:"Ralph Lauren Polo", name_en:"Ralph Lauren Polo", name_de:"Ralph Lauren Polo",
+    price:26.99, desc_ro:"Tricou clasic cu mânecă scurtă, perfect pentru orice ocazie.", desc_en:"Classic short sleeve polo shirt, perfect for any occasion.", desc_de:"Klassisches Kurzarm-Polohemd, perfekt für jeden Anlass.",
     img:"https://si.geilicdn.com/pcitem1910570286-04b30000019624c3a60f0a8133cc_1280_1280.jpg",
-    category:"shirts", originalPrice:10, discount:0, isNew:true, sizes:["XS", "S", "M", "L", "XL"],
+    category:"shirts", originalPrice:26.99, discount:0, isNew:true, sizes:["XS", "S", "M", "L", "XL"],
     images: [
       "https://si.geilicdn.com/pcitem1910570286-04b30000019624c3a60f0a8133cc_1280_1280.jpg",
       "https://si.geilicdn.com/pcitem1910570286-10ec0000019624c3adb70a20e672_1280_1280.jpg",
       "https://si.geilicdn.com/pcitem1910570286-190a0000019624c3abda0a23037f_1280_1280.jpg",
       "https://si.geilicdn.com/pcitem1910570286-16120000019624c3b5c00a210349_1280_1280.jpg"
     ] },
-  { id:4, brand:"Zipper Ralph Lauren", name_ro:"Geacă cu fermoar - Negru", name_en:"Zipper Hooded Jacket - Black", name_de:"Reißverschluss-Jacke - Schwarz",
-    price:12, desc_ro:"Geacă elegantă cu fermoar, perfectă pentru toate ocaziile.", desc_en:"Elegant zipper jacket, perfect for all occasions.", desc_de:"Elegante Reißverschluss-Jacke, perfekt für alle Anlässe.",
+  { id:4, brand:"Ralph Lauren", name_ro:"Ralph Lauren Zipper", name_en:"Ralph Lauren Zipper", name_de:"Ralph Lauren Zipper",
+    price:29.99, desc_ro:"Geacă elegantă cu fermoar, perfectă pentru toate ocaziile.", desc_en:"Elegant zipper jacket, perfect for all occasions.", desc_de:"Elegante Reißverschluss-Jacke, perfekt für alle Anlässe.",
     img:"https://si.geilicdn.com/open260671440-1234478995-7e5900000190a22d1fe30aa0233d_2000_2000.jpg",
-    category:"jackets", originalPrice:12, discount:0, isNew:false, sizes:["XS", "S", "M", "L", "XL"],
+    category:"jackets", originalPrice:29.99, discount:0, isNew:false, sizes:["XS", "S", "M", "L", "XL"],
     images: [
       "https://si.geilicdn.com/open260671440-1234478995-7e5900000190a22d1fe30aa0233d_2000_2000.jpg",
       "https://si.geilicdn.com/open260671440-1234478995-1fa600000190a22d54d60a210298_2000_2000.jpg",
       "https://si.geilicdn.com/open260671440-1234478995-133b00000190a22d4e810a22d234_2000_2000.jpg",
       "https://si.geilicdn.com/open260671440-1234478995-74b000000190a22d29480a232357_2000_2000.jpg"
     ] },
-  { id:5, brand:"Nike", name_ro:"Nike Air Force 1 '07 - Alb", name_en:"Air Force 1 '07 - White", name_de:"Air Force 1 '07 - Weiß",
-    price:44, desc_ro:"Sneakers iconice albe, stil clasic.", desc_en:"Classic white iconic sneakers.", desc_de:"Klassische weiße Sneaker.",
+  { id:5, brand:"Nike", name_ro:"Air Force 1", name_en:"Air Force 1", name_de:"Air Force 1",
+    price:44.99, desc_ro:"Sneakers iconice albe, stil clasic.", desc_en:"Classic white iconic sneakers.", desc_de:"Klassische weiße Sneaker.",
     img:"https://gomagcdn.ro/domains2/sneakerit.ro/files/product/original/air-force-1-07-white-915029.jpeg",
-    category:"shoes", originalPrice:44, discount:0.1, isNew:true, sizes:["36","37","38","39","40","41","42","43","44","45"] },
-  { id:6, brand:"Louis Vuitton", name_ro:"Portofel LV - Monogram Eclipse", name_en:"Slender Wallet - Monogram Eclipse", name_de:"Schlanke Brieftasche - Monogram Eclipse",
-    price:21, desc_ro:"Portofel din piele cu monogramă LV.", desc_en:"Elegant leather wallet with LV monogram.", desc_de:"Elegante Lederbrieftasche mit LV-Monogramm.",
+    category:"shoes", originalPrice:44.99, discount:0, isNew:true, sizes:["36","37","38","39","40","41","42","43","44","45"] },
+  { id:6, brand:"Louis Vuitton", name_ro:"Louis Vuitton Moneybag", name_en:"Louis Vuitton Moneybag", name_de:"Louis Vuitton Moneybag",
+    price:25.99, desc_ro:"Portofel din piele cu monogramă LV.", desc_en:"Elegant leather wallet with LV monogram.", desc_de:"Elegante Lederbrieftasche mit LV-Monogramm.",
     img:"https://cdn1.jolicloset.com/img4/full/2025/09/2475738-2.jpg",
-    category:"accessories", originalPrice:21, discount:0, isNew:false, sizes:[] } 
+    category:"accessories", originalPrice:25.99, discount:0, isNew:false, sizes:[] },
+  { id:7, brand:"Louis Vuitton", name_ro:"Louis Vuitton Belt", name_en:"Louis Vuitton Belt", name_de:"Louis Vuitton Belt",
+    price:15.99, desc_ro:"Curea Louis Vuitton din piele.", desc_en:"Louis Vuitton leather belt.", desc_de:"Louis Vuitton Leder Gürtel.",
+    img:"https://img.alicdn.com/img/ibank/O1CN01zEUsYy1gRiGQzjUfQ_!!2217478184139-0-cib.jpg",
+    category:"accessories", originalPrice:15.99, discount:0, isNew:false, sizes:[],
+    images: [
+      "https://img.alicdn.com/img/ibank/O1CN01zEUsYy1gRiGQzjUfQ_!!2217478184139-0-cib.jpg",
+      "https://img.alicdn.com/img/ibank/O1CN013bDy8V1gRiGTdtHqA_!!2217478184139-0-cib.jpg",
+      "https://img.alicdn.com/img/ibank/O1CN01Hci9F31gRiGUOcPE9_!!2217478184139-0-cib.jpg"
+    ] },
+  { id:8, brand:"Burberry", name_ro:"Burberry Jacket", name_en:"Burberry Jacket", name_de:"Burberry Jacket",
+    price:89.99, desc_ro:"Geacă Burberry premium.", desc_en:"Premium Burberry jacket.", desc_de:"Premium Burberry Jacke.",
+    img:"https://si.geilicdn.com/open1646458249-1234478995-55e800000193a69cb00c0aa08290_640_640.jpg",
+    category:"jackets", originalPrice:89.99, discount:0, isNew:false, sizes:["XS", "S", "M", "L", "XL"],
+    images: [
+      "https://si.geilicdn.com/open1646458249-1234478995-55e800000193a69cb00c0aa08290_640_640.jpg",
+      "https://si.geilicdn.com/open1646458249-1234478995-55da00000193a69ca6800aa08290_640_640.jpg",
+      "https://si.geilicdn.com/open1646458249-1234478995-58dd00000193a69caeb60a22d234_1080_1080.jpg",
+      "https://si.geilicdn.com/open1646458249-1234478995-2f9100000193a69cb5920a232357_1080_1080.jpg",
+      "https://si.geilicdn.com/open1646458249-1234478995-63eb00000193a69ca6c50a210298_640_640.jpg"
+    ] }
 ];
 
 let cart = [];
